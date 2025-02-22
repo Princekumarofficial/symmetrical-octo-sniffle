@@ -81,4 +81,3 @@ Feel free to fork the repository, create a new branch, and submit a pull request
 This project is open-source and available under the MIT License.
 
 ---
-Happy chatting! 🎉
