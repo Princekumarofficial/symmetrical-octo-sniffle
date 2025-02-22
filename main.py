@@ -83,13 +83,14 @@ class Peer:
         while self.running:
             try:
                 message = client_socket.recv(1024).decode()
+                decoded_message = message.split('CipherSurge')[-1].strip()
                 if message:
-                    if message.lower() == 'exit':
+                    if decoded_message.lower() == 'exit':
                         print(f"\nPeer {address[0]}:{address[1]} disconnected")
                         del self.peers[peer_addr]
                         client_socket.close()
                         break
-                    print(f"\nReceived from {address[0]}:{address[1]}: {message}")
+                    print(f"\n{message}")
                     self.display_menu()
                 else:
                     break
@@ -118,6 +119,8 @@ class Peer:
             # Create a new socket for sending the message
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             client_socket.connect((ip, port))
+
+            message = f"{ip}:{port} CipherSurge {message}"
             
             # Send the message
             client_socket.send(message.encode())
