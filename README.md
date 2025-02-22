@@ -55,7 +55,20 @@ Enter the recipient's port number: 5001
 Enter your message: Hello from Alice!
 Message sent to 192.168.1.10:5001
 ```
+```sh
+Enter your name: Alice
+Enter your port number: 5000
+Server listening on port 5000
 
+***** Menu *****
+1. Send message
+2. Query connected peers
+0. Quit
+Enter choice: 2
+Connected Peers:
+1. 192.168.1.10:5001
+2. 192.168.1.15:5002
+```
 ## Known Issues & Improvements
 - Currently, peers are not automatically removed if they unexpectedly disconnect.
 - Could add encryption for more secure communication.
