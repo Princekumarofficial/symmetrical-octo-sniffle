@@ -1,7 +1,7 @@
 # Team members :- 
-# Prince Kumar 230051013
-# Vikrant 230001082
-# Yash Vijay Kumbhkarn 230001083
+- Prince Kumar 230051013
+- Vikrant 230001082
+- Yash Vijay Kumbhkarn 230001083
 
 # Peer-to-Peer Chat System
 
